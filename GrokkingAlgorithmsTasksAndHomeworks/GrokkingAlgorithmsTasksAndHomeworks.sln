@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectionSort", "SelectionS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.1-4.4", "4.1-4.4\4.1-4.4.csproj", "{9751AD42-3752-4B66-9543-60144F1899A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{1C615938-8CCB-4252-9FEF-B8BF271E665E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\QuickSort.csproj", "{1C615938-8CCB-4252-9FEF-B8BF271E665E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Breadth-First Search", "Breadth-First Search\Breadth-First Search.csproj", "{F8C521AE-50EF-4BF4-9683-E19AFFC738A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1C615938-8CCB-4252-9FEF-B8BF271E665E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C615938-8CCB-4252-9FEF-B8BF271E665E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C615938-8CCB-4252-9FEF-B8BF271E665E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C521AE-50EF-4BF4-9683-E19AFFC738A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C521AE-50EF-4BF4-9683-E19AFFC738A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C521AE-50EF-4BF4-9683-E19AFFC738A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C521AE-50EF-4BF4-9683-E19AFFC738A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

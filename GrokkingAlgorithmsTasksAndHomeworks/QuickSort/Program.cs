@@ -1,6 +1,8 @@
 ﻿class Program
 {
 
+    private static Random _random = new Random();
+
     private static int[] QuickSort(int[] array)
     {
 
@@ -14,7 +16,7 @@
             return array[0] < array[1] ? new int[] { array[0], array[1] } : new int[] { array[1], array[0] };
         }
 
-        int pivot = array[0];
+        int pivot = array[_random.Next(0, array.Length)];
         // Using LINQ
         int[] lower = array.Where(i => i < pivot).ToArray();
         int[] higher = array.Where(i => i > pivot).ToArray();
