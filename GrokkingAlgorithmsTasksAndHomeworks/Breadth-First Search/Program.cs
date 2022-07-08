@@ -10,15 +10,22 @@
 
         private static bool BFSFindMangoSeller(Dictionary<string, object> friends)
         {
+            Dictionary<string, bool> checkedPersons = new Dictionary<string, bool>();
             Queue<KeyValuePair<string, object>> queue = new Queue<KeyValuePair<string, object>>();
             foreach(KeyValuePair<string, object> pair in friends)
             {
                 queue.Enqueue(pair);
             }
-
+            
             while(queue.Count > 0)
             {
                 var person = queue.Dequeue();
+
+                if (checkedPersons.ContainsKey(person.Key))
+                {
+                    continue;
+                }
+
                 if (IsMangoSeller(person.Key))
                 {
                     Console.WriteLine($"FOUND!!! - {person.Key} is actual mango seller!");
@@ -31,6 +38,8 @@
                         queue.Enqueue(pair);
                     }
                 }
+
+                checkedPersons.Add(person.Key, true);
             }
             Console.WriteLine("I am so sorry, but you do not have any relationships with mango sellers :(");
             return false;
